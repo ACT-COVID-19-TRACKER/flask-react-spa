@@ -19,7 +19,7 @@ class Home extends React.Component {
   render() {
     return (
       <PageContent>
-        <About />
+        {/*<About />*/}
         <ArticlesLayout>
           <h2>Latest Articles!</h2>
           <LatestArticles />
