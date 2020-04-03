@@ -3,14 +3,14 @@ import { Route, Switch } from 'react-router-dom'
 import startCase from 'lodash/startCase'
 import { compile } from 'path-to-regexp'
 
-import {
-  ArticleDetail,
-  Articles,
-  CategoryDetail,
-  Series,
-  SeriesDetail,
-  TagDetail,
-} from 'blog/pages'
+// import {
+//   ArticleDetail,
+//   Articles,
+//   CategoryDetail,
+//   Series,
+//   SeriesDetail,
+//   TagDetail,
+// } from 'blog/pages'
 
 import {
   ForgotPassword,
@@ -40,9 +40,9 @@ import { AnonymousRoute, ProtectedRoute } from 'utils/route'
  * Both keys and values are component class names
  */
 export const ROUTES = {
-  ArticleDetail: 'ArticleDetail',
-  Articles: 'Articles',
-  CategoryDetail: 'CategoryDetail',
+  // ArticleDetail: 'ArticleDetail',
+  // Articles: 'Articles',
+  // CategoryDetail: 'CategoryDetail',
   Contact: 'Contact',
   ForgotPassword: 'ForgotPassword',
   Home: 'Home',
@@ -52,11 +52,11 @@ export const ROUTES = {
   Profile: 'Profile',
   ResendConfirmation: 'ResendConfirmation',
   ResetPassword: 'ResetPassword',
-  Series: 'Series',
-  SeriesDetail: 'SeriesDetail',
+  // Series: 'Series',
+  // SeriesDetail: 'SeriesDetail',
   SignUp: 'SignUp',
   Styles: 'Styles',
-  TagDetail: 'TagDetail',
+  // TagDetail: 'TagDetail',
 }
 
 /**
@@ -70,21 +70,21 @@ export const ROUTES = {
  *  - label: optional, label to use for links (default: startCase(key))
  */
 const routes = [
-  {
-    key: ROUTES.ArticleDetail,
-    path: '/articles/:slug',
-    component: ArticleDetail,
-  },
-  {
-    key: ROUTES.Articles,
-    path: '/articles',
-    component: Articles,
-  },
-  {
-    key: ROUTES.CategoryDetail,
-    path: '/articles/categories/:slug',
-    component: CategoryDetail,
-  },
+  // {
+  //   key: ROUTES.ArticleDetail,
+  //   path: '/articles/:slug',
+  //   component: ArticleDetail,
+  // },
+  // {
+  //   key: ROUTES.Articles,
+  //   path: '/articles',
+  //   component: Articles,
+  // },
+  // {
+  //   key: ROUTES.CategoryDetail,
+  //   path: '/articles/categories/:slug',
+  //   component: CategoryDetail,
+  // },
   {
     key: ROUTES.Contact,
     path: '/contact',
@@ -143,17 +143,17 @@ const routes = [
     routeComponent: AnonymousRoute,
     label: 'Reset Password',
   },
-  {
-    key: ROUTES.Series,
-    path: '/series',
-    component: Series,
-    label: 'Article Series',
-  },
-  {
-    key: ROUTES.SeriesDetail,
-    path: '/series/:slug',
-    component: SeriesDetail,
-  },
+  // {
+  //   key: ROUTES.Series,
+  //   path: '/series',
+  //   component: Series,
+  //   label: 'Article Series',
+  // },
+  // {
+  //   key: ROUTES.SeriesDetail,
+  //   path: '/series/:slug',
+  //   component: SeriesDetail,
+  // },
   {
     key: ROUTES.SignUp,
     path: '/sign-up',
@@ -166,11 +166,11 @@ const routes = [
     path: '/styles',
     component: Styles,
   },
-  {
-    key: ROUTES.TagDetail,
-    path: '/articles/tags/:slug',
-    component: TagDetail,
-  },
+  // {
+  //   key: ROUTES.TagDetail,
+  //   path: '/articles/tags/:slug',
+  //   component: TagDetail,
+  // },
 ]
 
 /**
